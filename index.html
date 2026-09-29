@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>高宇彤 Yutong Gao</title>
+<meta name="description" content="高宇彤 Yutong Gao — software engineer at Google in Mountain View, California. Travels and Yanxia.">
+<link rel="canonical" href="https://yanxia.art/gaoyutong/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yutong Gao","alternateName":"高宇彤","url":"https://yanxia.art/gaoyutong/","jobTitle":"Software Engineer","worksFor":{"@type":"Organization","name":"Google"},"homeLocation":{"@type":"Place","name":"Mountain View, California"},"sameAs":["https://www.linkedin.com/in/gaoyutong/","https://github.com/yutonggao"]}</script>
+<script src="/analytics.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EB; --ink:#1E2B38; --muted:#5E6B75; --rule:#C9CFC6; --card:#F6F7F3; --accent:#C9930C; --link:#2B4C7E;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#E8B730;--link:#8FB0E0}}
+:root[data-theme="dark"]{--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#E8B730;--link:#8FB0E0}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none}
+
+.top{border-bottom:1px solid var(--rule)}
+.top-in{max-width:880px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:24px}
+.name{font:700 22px var(--serif);text-decoration:none;color:var(--ink);margin-right:auto}
+.top nav{display:flex;gap:20px}
+.top nav a{color:var(--ink);text-decoration:none;font-size:16px}
+.top nav a:hover{color:var(--accent)}
+.lang{font:500 14px var(--sans);color:var(--ink);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:4px 14px;cursor:pointer}
+.lang:hover{border-color:var(--ink)}
+
+main{max-width:880px;margin:0 auto;padding:56px 24px 96px}
+h1{font:700 clamp(36px,6vw,52px)/1.15 var(--serif);margin:0 0 28px}
+.intro p{margin:0 0 18px;max-width:36em}
+
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:44px 0 48px}
+.card{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:8px;overflow:hidden;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.card .img{aspect-ratio:16/9;background:#1C2440 center/cover}
+.card .img.yx{background:linear-gradient(135deg,#7A2E5B 0%,#5B3A86 55%,#2E57A8 100%);display:flex;align-items:center;justify-content:center;color:#fff;font:700 44px var(--serif);letter-spacing:.2em}
+.card .body{padding:16px 18px 18px}
+.card h2{font:700 21px/1.35 var(--serif);margin:0 0 4px}
+.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+
+.elsewhere{border-top:1px solid var(--rule);padding-top:24px}
+.elsewhere p{margin:0 0 10px}
+.elsewhere ul{list-style:none;margin:0;padding:0;display:flex;gap:24px;flex-wrap:wrap}
+footer{max-width:880px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:13px}
+
+.contact{border-top:1px solid var(--rule);padding-top:24px;margin-top:36px}
+.contact[hidden]{display:none}
+.contact h2{font:700 24px/1.3 var(--serif);margin:0 0 6px}
+.contact .hint{margin:0 0 18px;color:var(--muted);font-size:15px}
+.contact form{display:grid;gap:14px;max-width:36em}
+.contact .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact label{display:grid;gap:4px;font-size:14px;color:var(--muted)}
+.contact input,.contact textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:9px 12px;width:100%}
+.contact textarea{min-height:140px;resize:vertical}
+.contact input:focus,.contact textarea:focus{outline:none;border-color:var(--ink)}
+.contact .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.contact .actions{display:flex;align-items:center;gap:14px}
+.contact button{font:500 15px var(--sans);color:var(--paper);background:var(--ink);border:0;border-radius:999px;padding:9px 22px;cursor:pointer}
+.contact button:disabled{opacity:.5;cursor:default}
+.contact .status{font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .top-in{padding:12px 16px;gap:14px}
+  .top nav{gap:14px}
+  main{padding:36px 16px 72px}
+  .cards{grid-template-columns:1fr}
+  .contact .row{grid-template-columns:1fr}
+  footer{padding:0 16px 32px}
+}
+</style>
+</head>
+<body data-lang="zh">
+<header class="top"><div class="top-in">
+  <a class="name" href="/gaoyutong/"><span class="zh">高宇彤</span><span class="en">Yutong Gao</span></a>
+  <nav aria-label="Sections">
+    <a href="/travels/"><span class="zh">旅行</span><span class="en">Travels</span></a>
+    <a href="/"><span class="zh">烟霞</span><span class="en">Yanxia</span></a>
+  </nav>
+  <button class="lang" id="langBtn" type="button">EN</button>
+</div></header>
+
+<main>
+  <h1><span class="zh">关于我</span><span class="en">About</span></h1>
+  <div class="intro">
+    <p class="zh">你好，我是高宇彤，住在加州山景城，是 Google 的一名软件工程师。</p>
+    <p class="en">Hi, I'm Yutong Gao. I live in Mountain View, California, and work as a software engineer at Google.</p>
+
+    <p class="zh">工作之外，我喜欢慢慢地旅行：坐火车穿过一个国家，在寺庙、古战场和博物馆之间走走停停，读一读路边石碑上的字。2024 年冬天，我在日本待了三个多星期，从北海道一路走到九州，接着又在土耳其开车绕了一圈。</p>
+    <p class="en">Outside work, I like to travel slowly: crossing a country by train, wandering between temples, old battlefields and museums, and stopping to read the stones by the road. In the winter of 2024 I spent three and a half weeks in Japan, from Hokkaido down to Kyushu, and then drove a loop around Turkey.</p>
+
+    <p class="zh">我也参与组织「烟霞」，一个主题分享活动，聊史诗、历史和文学，到现在已经办了一百六十多期。</p>
+    <p class="en">I also help run Yanxia (烟霞), a series of themed talks on epics, history and literature, now more than a hundred and sixty sessions in.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="/travels/">
+      <div class="img" style="background-image:url(img/travels.webp)" role="img" aria-label="The great torii at Miyajima"></div>
+      <div class="body">
+        <h2><span class="zh">旅行</span><span class="en">Travels</span></h2>
+        <p><span class="zh">日本 2024 · 土耳其 2024–25。按天记录的路线、地图和照片。</span><span class="en">Japan 2024 · Turkey 2024–25. Day-by-day routes, maps and photos.</span></p>
+      </div>
+    </a>
+    <a class="card" href="/">
+      <div class="img yx" aria-hidden="true">烟霞</div>
+      <div class="body">
+        <h2><span class="zh">烟霞</span><span class="en">Yanxia</span></h2>
+        <p><span class="zh">每周一次的线上主题分享，一百六十多期的存档。</span><span class="en">A weekly online talk series: the archive of 160-plus sessions.</span></p>
+      </div>
+    </a>
+  </div>
+
+  <section class="elsewhere">
+    <p><span class="zh">在其他地方找到我：</span><span class="en">You can also find me on:</span></p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/gaoyutong/">LinkedIn</a></li>
+      <li><a href="https://github.com/yutonggao">GitHub</a></li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact" hidden>
+    <h2><span class="zh">联系我</span><span class="en">Get in touch</span></h2>
+    <p class="hint"><span class="zh">留言会直接发给我。想让我回复的话，请留下邮箱或其他联系方式。</span><span class="en">Your message comes straight to me. Leave an email or other contact if you'd like a reply.</span></p>
+    <form id="contactForm" novalidate>
+      <div class="row">
+        <label><span><span class="zh">称呼</span><span class="en">Name</span></span><input name="name" maxlength="100" autocomplete="name"></label>
+        <label><span><span class="zh">联系方式（选填）</span><span class="en">Email or contact (optional)</span></span><input name="contact" maxlength="200" autocomplete="email"></label>
+      </div>
+      <label><span><span class="zh">留言</span><span class="en">Message</span></span><textarea name="message" maxlength="5000" required></textarea></label>
+      <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+      <div class="actions">
+        <button type="submit"><span class="zh">发送</span><span class="en">Send</span></button>
+        <span class="status" id="contactStatus" role="status"></span>
+      </div>
+    </form>
+  </section>
+</main>
+<footer>© 2026 <span class="zh">高宇彤</span><span class="en">Yutong Gao</span></footer>
+
+<script>
+// one language setting shared by every page on this domain
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() {
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  btn.textContent = lang === "zh" ? "EN" : "中文";
+}
+btn.addEventListener("click", () => {
+  lang = lang === "zh" ? "en" : "zh";
+  try { localStorage.setItem(KEY, lang); } catch (e) {}
+  apply();
+});
+apply();
+
+// contact form → Google Apps Script web app (apps-script/contact.gs), which appends a row
+// to a Google Sheet and emails the owner. The section stays hidden until the URL is set.
+const CONTACT_URL = "https://script.google.com/macros/s/AKfycbxSmyys4FySe0G8enxUEQ5_STB6UJZQRvzRA5oy36C0mp3AuyP8-oZJtlb8BDOK0ugr/exec";
+const form = document.getElementById("contactForm");
+const status = document.getElementById("contactStatus");
+const say = (zh, en) => { status.textContent = lang === "zh" ? zh : en; };
+if (CONTACT_URL) document.getElementById("contact").hidden = false;
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  if (!String(data.get("message") || "").trim()) { say("请先写点什么。", "Please write a message first."); return; }
+  data.append("lang", lang);
+  const b = form.querySelector("button");
+  b.disabled = true; say("发送中…", "Sending…");
+  try {
+    // Apps Script answers with a redirect the browser can't read cross-origin; no-cors still delivers it
+    await fetch(CONTACT_URL, { method: "POST", mode: "no-cors", body: new URLSearchParams(data) });
+    form.reset(); say("收到了，谢谢！", "Got it — thank you!");
+  } catch (err) {
+    say("没发出去，请稍后再试。", "That didn't go through. Please try again later.");
+  } finally { b.disabled = false; }
+});
+</script>
+</body>
+</html>
