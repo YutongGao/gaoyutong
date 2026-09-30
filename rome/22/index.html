@@ -115,6 +115,18 @@ article p.cap{color:var(--muted);font-size:14px;text-align:center;margin:-.4em 0
 </article></main>
 <footer>© 2026 <span class="zh">高宇彤</span><span class="en">Yutong Gao</span></footer>
 <script>
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() {
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  btn.textContent = lang === "zh" ? "EN" : "中文";
+}
+btn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; try { localStorage.setItem(KEY, lang); } catch (e) {} apply(); });
+apply();
 </script>
 </body>
 </html>

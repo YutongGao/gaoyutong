@@ -85,7 +85,7 @@ article p.cap{color:var(--muted);font-size:14px;text-align:center;margin:-.4em 0
   <p class="ennote en">This piece is written in Chinese.</p>
   <p>埃涅阿斯一行人离开了迦太基，再次来到西西里，稍作休整，和部下举行了一些运动比赛，来纪念他死去的父亲。</p>
 <p class="cap">埃涅阿斯为胜者颁发桂冠，费迪南德·博尔作</p>
-<p class="cap">然而这时朱诺又出来捣乱了——</p>
+<p>然而这时朱诺又出来捣乱了——</p>
 <p>她化作女性，劝诱饱经流离而希望安定的特洛伊妇女们，烧毁那些船只，这样他们就不需要继续颠沛流离。这样埃涅阿斯也无法实现前往意大利建国的使命。妇女们疯狂寻找火种扔上船，然而在朱庇特降雨之下，船队只损失了很小一部分。</p>
 <p>但是这样一件事对埃涅阿斯的打击却出乎意料的大——可以说，这是压倒骆驼的最后一根稻草。</p>
 <p>看看埃涅阿斯都经历了什么：</p>
@@ -134,6 +134,18 @@ article p.cap{color:var(--muted);font-size:14px;text-align:center;margin:-.4em 0
 </article></main>
 <footer>© 2026 <span class="zh">高宇彤</span><span class="en">Yutong Gao</span></footer>
 <script>
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() {
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  btn.textContent = lang === "zh" ? "EN" : "中文";
+}
+btn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; try { localStorage.setItem(KEY, lang); } catch (e) {} apply(); });
+apply();
 </script>
 </body>
 </html>

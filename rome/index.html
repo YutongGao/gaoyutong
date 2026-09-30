@@ -149,7 +149,7 @@ for (const p of PARTS) {
 }
 h += `<section class="part"><h2><span class="zh">烟霞里的罗马</span><span class="en">Rome at Yanxia</span></h2><p class="range"><span class="zh">讲过罗马和它前后的几期分享</span><span class="en">Talks on Rome and what came before and after</span></p><ol class="arts yx">`;
 for (const [n, zh, en, y] of YANXIA)
-  h += `<li><span class="no">#${n}</span><a href="/#${n}"><span>${esc(zh)}</span><span class="en-t">${esc(en)}</span></a><time>${y}</time></li>`;
+  h += `<li><span class="no">#${n}</span><a href="/s/${n}/"><span>${esc(zh)}</span><span class="en-t">${esc(en)}</span></a><time>${y}</time></li>`;
 h += `</ol></section>`;
 document.getElementById("parts").innerHTML = h;
 
