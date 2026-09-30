@@ -66,16 +66,17 @@ footer{max-width:880px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font
   <p class="sub"><span class="zh">2017 年起在公众号「烟霞Nebula」上连载</span><span class="en">A serial on the WeChat account Yanxia Nebula, begun in 2017</span></p>
   <div class="intro">
     <p class="zh">2017 年夏天开了这个公众号，想把读到的罗马故事一篇篇写下来：从特洛伊陷落后的神话写起，经过七位国王，一直写到共和国初年的辛辛纳图斯。后来毕业、工作，连载停在了第三十八篇。几年后这个公众号成了烟霞的阵地，罗马也时不时回到烟霞的分享里。</p>
-    <p class="zh">文章都在公众号上，点标题可以读原文。希望以后能慢慢把它写完。</p>
+    <p class="zh">点标题读全文。希望以后能慢慢把它写完。</p>
     <p class="en">I started the account in the summer of 2017 to write down the Roman stories I was reading, one post at a time: from the legends after the fall of Troy, through the seven kings, to Cincinnatus in the early Republic. Then came graduation and work, and the serial stopped at part thirty-eight. Years later the account became the home of Yanxia, and Rome keeps coming back in its talks.</p>
-    <p class="en">The posts are on WeChat and in Chinese; each title links to the original. I hope to finish it, slowly.</p>
+    <p class="en">The posts are in Chinese; click a title to read it. I hope to finish it, slowly.</p>
   </div>
   <div id="parts"></div>
 </main>
 <footer>© 2026 <span class="zh">高宇彤</span><span class="en">Yutong Gao</span></footer>
 
 <script>
-const W = id => "https://mp.weixin.qq.com/s/" + id;
+const SLUG = {"TggsL21J7FBovRC7eMJfkQ": "preface", "ZVwJeFYvK7w0b4iHYURvuQ": "1", "4Lu0oU_SZJM4J1v5tlUhFw": "2", "JPqSP9ZKTqnyiL0dGAnvBw": "3", "l6XMdqPfmk-dlTTFsOMEow": "4", "b3jzx8CMuXZsq5Zzju8Lfw": "5", "lzzaVoHCov0N6betxYxOMQ": "6", "YHkfLXQUB9nrbWVnKSLPBg": "7", "U4bIzn_8GBDgGx2wPjsnpg": "8", "ndVRKnDMLgr8j9j3oUaDDg": "9", "0qnwmxWZw8MODaXQ4dL-vg": "10", "lB-y5jKvyUWFYULk5gjmcg": "11", "JalcwvDDDbHW_fHtgTl3OA": "12", "rTWE0rsuwcIAxCbNgH83hg": "13", "WeMKJ_QKjXthxIguYPwRuA": "14", "UdtqJoTWQoWK1JjZp_sVnw": "15", "RuxrNW9F4LE1XnFI8z1tGw": "16", "_keJzDFo6evRnpCfAmfQOw": "17", "yTbOngLtR_1ICBGlcP4ipg": "18", "Qg0lMu9WjUcN2vmd6Rym2A": "19", "xyuzDYTdboqs6iYSAIJsnw": "20", "7nEKdXB-tikCA-WgAkXPpg": "21", "VsYi8GajtOfdtgRu6ghYMA": "22", "gQVD7uXr71hPuDQG9OjXCg": "23", "cvwuTCm0c7d_DK6kTtJrDg": "24", "g_9Lv86bK5KIUMsrJR_xvQ": "25", "fhAuLoCx5HJJBRh5roFaDQ": "26", "PtTPB3q4l_UJoAKnDlCEIw": "27", "NeWuWTJFHVgtetgEQdZIbA": "28", "pGMl6RoVGpQgOqv7wONgHA": "29", "ysu-6vHlE2hN6fgxJLGo4A": "30", "Erhg2jgIfIGYzgMBgr1WYA": "31", "nIyRvIoEYSyRkOPnhAjfeg": "32", "mlxrvs5lqDx4Bz-DV1gFAQ": "33", "WHgVrN50qMXv6CIq7XPl4g": "34", "26AluWDFbvGBfsOBYgt6hQ": "35", "9WFmFy6vKxNRdshyOAabPw": "36", "4g3cft-jiYhXeArlcJxCwg": "37", "VaUnk221Xfk9_i76l4OohA": "38", "r8e7JobOe4Xl7Z-Z_57IoA": "republic-and-empire", "5Kuk3FtesBXX5CNDecxzIg": "brumaire"};
+const W = id => SLUG[id] + "/";
 const PARTS = [
   {zh: "序", en: "Preface", items: [
     ["", "序——开启公众号", "Preface: starting the account", "2017-06-19", "TggsL21J7FBovRC7eMJfkQ"]]},
