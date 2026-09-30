@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>罗马史 Roman History · 高宇彤</title>
+<meta name="description" content="高宇彤的罗马史连载：从建城前的神话、七王时代写到共和国初年的辛辛纳图斯，以及烟霞里讲过的罗马。 A serial history of Rome by Yutong Gao.">
+<link rel="canonical" href="https://yanxia.art/gaoyutong/rome/">
+<script src="/analytics.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EB; --ink:#1E2B38; --muted:#5E6B75; --rule:#C9CFC6; --card:#F6F7F3; --accent:#8B2E24; --link:#2B4C7E;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#E0806F;--link:#8FB0E0}}
+:root[data-theme="dark"]{--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#E0806F;--link:#8FB0E0}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none}
+.top{border-bottom:1px solid var(--rule)}
+.top-in{max-width:880px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:24px}
+.name{font:700 22px var(--serif);text-decoration:none;color:var(--ink);margin-right:auto}
+.top nav{display:flex;gap:20px}
+.top nav a{color:var(--ink);text-decoration:none;font-size:16px}
+.top nav a:hover,.top nav a[aria-current]{color:var(--accent)}
+.lang{font:500 14px var(--sans);color:var(--ink);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:4px 14px;cursor:pointer}
+main{max-width:880px;margin:0 auto;padding:56px 24px 96px}
+h1{font:700 clamp(36px,6vw,52px)/1.15 var(--serif);margin:0 0 8px}
+.sub{color:var(--accent);font:500 16px var(--sans);margin:0 0 24px}
+.intro p{margin:0 0 16px;max-width:36em}
+.part{margin-top:48px;border-top:2px solid var(--ink);padding-top:16px}
+.part h2{font:700 24px/1.3 var(--serif);margin:0}
+.part .range{color:var(--muted);font-size:14px;margin:2px 0 12px}
+ol.arts{list-style:none;margin:0;padding:0}
+ol.arts li{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--rule)}
+ol.arts .no{font:700 15px var(--serif);color:var(--accent)}
+ol.arts a{text-decoration:none;color:var(--ink)}
+ol.arts a:hover{color:var(--link);text-decoration:underline}
+ol.arts .en-t{display:block;color:var(--muted);font-size:14px}
+ol.arts time{color:var(--muted);font-size:13px;white-space:nowrap}
+.todo{color:var(--muted);font-style:italic;padding:12px 0 0;margin:0}
+.yx li{grid-template-columns:52px 1fr auto}
+footer{max-width:880px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:13px}
+@media (max-width:640px){body{font-size:16px}.top-in{padding:12px 16px;gap:14px}.top nav{gap:14px}main{padding:36px 16px 72px}ol.arts li{grid-template-columns:40px 1fr}ol.arts time{grid-column:2}footer{padding:0 16px 32px}}
+</style>
+</head>
+<body data-lang="zh">
+<header class="top"><div class="top-in">
+  <a class="name" href="/gaoyutong/"><span class="zh">高宇彤</span><span class="en">Yutong Gao</span></a>
+  <nav aria-label="Sections">
+    <a href="/travels/"><span class="zh">旅行</span><span class="en">Travels</span></a>
+    <a href="/gaoyutong/rome/" aria-current="page"><span class="zh">罗马史</span><span class="en">Rome</span></a>
+    <a href="/"><span class="zh">烟霞</span><span class="en">Yanxia</span></a>
+  </nav>
+  <button class="lang" id="langBtn" type="button">EN</button>
+</div></header>
+
+<main>
+  <h1><span class="zh">罗马史</span><span class="en">A History of Rome</span></h1>
+  <p class="sub"><span class="zh">2017 年起在公众号「烟霞Nebula」上连载</span><span class="en">A serial on the WeChat account Yanxia Nebula, begun in 2017</span></p>
+  <div class="intro">
+    <p class="zh">2017 年夏天开了这个公众号，想把读到的罗马故事一篇篇写下来：从特洛伊陷落后的神话写起，经过七位国王，一直写到共和国初年的辛辛纳图斯。后来毕业、工作，连载停在了第三十八篇。几年后这个公众号成了烟霞的阵地，罗马也时不时回到烟霞的分享里。</p>
+    <p class="zh">文章都在公众号上，点标题可以读原文。希望以后能慢慢把它写完。</p>
+    <p class="en">I started the account in the summer of 2017 to write down the Roman stories I was reading, one post at a time: from the legends after the fall of Troy, through the seven kings, to Cincinnatus in the early Republic. Then came graduation and work, and the serial stopped at part thirty-eight. Years later the account became the home of Yanxia, and Rome keeps coming back in its talks.</p>
+    <p class="en">The posts are on WeChat and in Chinese; each title links to the original. I hope to finish it, slowly.</p>
+  </div>
+  <div id="parts"></div>
+</main>
+<footer>© 2026 <span class="zh">高宇彤</span><span class="en">Yutong Gao</span></footer>
+
+<script>
+const W = id => "https://mp.weixin.qq.com/s/" + id;
+const PARTS = [
+  {zh: "序", en: "Preface", items: [
+    ["", "序——开启公众号", "Preface: starting the account", "2017-06-19", "TggsL21J7FBovRC7eMJfkQ"]]},
+  {zh: "地理与神话", en: "Geography and legend", items: [
+    ["1", "地理背景", "The lie of the land", "2017-06-22", "ZVwJeFYvK7w0b4iHYURvuQ"],
+    ["2", "建城前的神话（1/3）", "Legends before the founding (1/3)", "2017-06-23", "4Lu0oU_SZJM4J1v5tlUhFw"],
+    ["3", "建城前的神话（2/3）", "Legends before the founding (2/3)", "2017-06-25", "JPqSP9ZKTqnyiL0dGAnvBw"],
+    ["4", "建城前的神话（3/3）", "Legends before the founding (3/3)", "2017-06-26", "l6XMdqPfmk-dlTTFsOMEow"]]},
+  {zh: "王政时代", en: "The kings", items: [
+    ["5", "建城者罗慕路斯（1/3）", "Romulus the founder (1/3)", "2017-06-28", "b3jzx8CMuXZsq5Zzju8Lfw"],
+    ["6", "建城者罗慕路斯（2/3）", "Romulus the founder (2/3)", "2017-07-01", "lzzaVoHCov0N6betxYxOMQ"],
+    ["7", "建城者罗慕路斯（3/3）", "Romulus the founder (3/3)", "2017-07-03", "YHkfLXQUB9nrbWVnKSLPBg"],
+    ["8", "第二位国王——努马", "Numa, the second king", "2017-07-10", "U4bIzn_8GBDgGx2wPjsnpg"],
+    ["9", "三代目——图卢斯", "Tullus, the third", "2017-07-11", "ndVRKnDMLgr8j9j3oUaDDg"],
+    ["10", "四代目——安库斯", "Ancus, the fourth", "2017-07-12", "0qnwmxWZw8MODaXQ4dL-vg"],
+    ["11", "老塔克文——第五任国王（1/2）", "Tarquin the Elder, the fifth king (1/2)", "2017-07-16", "lB-y5jKvyUWFYULk5gjmcg"],
+    ["12", "老塔克文——第五任国王（2/2）", "Tarquin the Elder, the fifth king (2/2)", "2017-07-17", "JalcwvDDDbHW_fHtgTl3OA"],
+    ["13", "赛尔维乌斯——第六任国王（1/4）", "Servius, the sixth king (1/4)", "2017-07-20", "rTWE0rsuwcIAxCbNgH83hg"],
+    ["14", "赛尔维乌斯的政治改革（2/4）", "The political reforms of Servius (2/4)", "2017-08-02", "WeMKJ_QKjXthxIguYPwRuA"],
+    ["15", "赛尔维乌斯的军事改革（3/4）", "The military reforms of Servius (3/4)", "2017-08-04", "UdtqJoTWQoWK1JjZp_sVnw"],
+    ["16", "赛尔维乌斯之死（4/4）", "The death of Servius (4/4)", "2017-08-05", "RuxrNW9F4LE1XnFI8z1tGw"],
+    ["17", "末代国王小塔克文", "Tarquin the Proud, the last king", "2017-08-10", "_keJzDFo6evRnpCfAmfQOw"],
+    ["18", "罗马王政时代总结", "The age of the kings: a summing-up", "2017-08-13", "yTbOngLtR_1ICBGlcP4ipg"]]},
+  {zh: "共和国初年", en: "The early Republic", items: [
+    ["19", "共和国的肇始（1）Res publica", "The Republic begins (1): Res publica", "2017-08-21", "Qg0lMu9WjUcN2vmd6Rym2A"],
+    ["20", "共和国的肇始（2）Cursus honorum", "The Republic begins (2): Cursus honorum", "2017-08-25", "xyuzDYTdboqs6iYSAIJsnw"],
+    ["21", "共和国之父布鲁图斯", "Brutus, father of the Republic", "2017-08-27", "7nEKdXB-tikCA-WgAkXPpg"],
+    ["22", "“人民之友”瓦莱利乌斯（1/3）", "Valerius, 'friend of the people' (1/3)", "2017-08-28", "VsYi8GajtOfdtgRu6ghYMA"],
+    ["23", "“人民之友”瓦莱利乌斯（2/3）", "Valerius, 'friend of the people' (2/3)", "2017-09-15", "gQVD7uXr71hPuDQG9OjXCg"],
+    ["24", "“人民之友”瓦莱利乌斯（3/3）", "Valerius, 'friend of the people' (3/3)", "2017-09-17", "cvwuTCm0c7d_DK6kTtJrDg"],
+    ["25", "和平撤离运动（1）", "The secession of the plebs (1)", "2017-09-18", "g_9Lv86bK5KIUMsrJR_xvQ"],
+    ["26", "和平撤离运动（2）", "The secession of the plebs (2)", "2017-10-05", "fhAuLoCx5HJJBRh5roFaDQ"],
+    ["27", "和平撤离运动：保民官（3）", "The secession of the plebs: the tribunes (3)", "2017-10-14", "PtTPB3q4l_UJoAKnDlCEIw"],
+    ["28", "科利奥兰纳斯（1/2）", "Coriolanus (1/2)", "2017-10-22", "NeWuWTJFHVgtetgEQdZIbA"],
+    ["29", "科利奥兰纳斯（2/2）", "Coriolanus (2/2)", "2017-10-22", "pGMl6RoVGpQgOqv7wONgHA"],
+    ["30", "卡西乌斯分配法案", "The land law of Cassius", "2017-11-09", "ysu-6vHlE2hN6fgxJLGo4A"],
+    ["31", "费边家族（1/2）", "The Fabii (1/2)", "2017-11-10", "Erhg2jgIfIGYzgMBgr1WYA"],
+    ["32", "费边家族（2/2）", "The Fabii (2/2)", "2017-11-12", "nIyRvIoEYSyRkOPnhAjfeg"],
+    ["33", "平民大会的产生", "How the plebeian assembly came about", "2017-11-30", "mlxrvs5lqDx4Bz-DV1gFAQ"],
+    ["34", "平民大会的成立", "The plebeian assembly founded", "2017-11-30", "WHgVrN50qMXv6CIq7XPl4g"],
+    ["35", "克劳狄和费边", "The Claudii and the Fabii", "2017-12-29", "26AluWDFbvGBfsOBYgt6hQ"],
+    ["36", "特伦提利乌斯法案", "The bill of Terentilius", "2018-03-28", "9WFmFy6vKxNRdshyOAabPw"],
+    ["37", "奴隶暴动！", "A slave rising!", "2018-03-31", "4g3cft-jiYhXeArlcJxCwg"],
+    ["38", "辛辛纳图斯（1/2）", "Cincinnatus (1/2)", "2018-05-15", "VaUnk221Xfk9_i76l4OohA"]],
+   todo: {zh: "未完待续。", en: "To be continued."}},
+  {zh: "旁枝", en: "Side paths", items: [
+    ["", "命题作文：共和国与帝国", "An essay on a set theme: republic and empire", "2017-10-11", "r8e7JobOe4Xl7Z-Z_57IoA"],
+    ["", "罗马和《路易波拿巴的雾月十八日》", "Rome and The Eighteenth Brumaire of Louis Bonaparte", "2022-12-21", "5Kuk3FtesBXX5CNDecxzIg"]]},
+];
+// Yanxia talks that pick up the Roman thread; each links to that session in the archive
+const YANXIA = [
+  [131, "特洛伊传奇：青铜时代请回答！", "The Legend of Troy: Answer Me, Bronze Age!", "2025"],
+  [169, "苏拉的共和国", "Sulla's Republic", "2026"],
+  [139, "卡利古拉：暴君、情色电影与存在主义哲学", "Caligula: Tyrant, Erotic Film and Existentialist Philosophy", "2025"],
+  [159, "从爱比克泰德到罗翔——斯多葛和基督教的合流回声", "From Epictetus to Luo Xiang: Stoic and Christian Echoes", "2026"],
+  [125, "王僧辩，还是左良玉——斯提里科和西罗马帝国的崩溃", "Stilicho and the Fall of the Western Roman Empire", "2025"],
+  [109, "边境混血英雄传——从真主之剑到曼齐刻尔特战役", "From the Sword of God to Manzikert", "2024"],
+  [52, "闪电和先辈：君士坦丁堡的1453和2023", "Constantinople in 1453 and 2023", "2023"],
+];
+const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+let h = "";
+for (const p of PARTS) {
+  const d = p.items.map(i => i[3]);
+  h += `<section class="part"><h2><span class="zh">${p.zh}</span><span class="en">${p.en}</span></h2><p class="range">${d[0].slice(0, 7)} – ${d[d.length - 1].slice(0, 7)}</p><ol class="arts">`;
+  for (const [no, zh, en, date, id] of p.items)
+    h += `<li><span class="no">${no}</span><a href="${W(id)}"><span>${esc(zh)}</span><span class="en-t">${esc(en)}</span></a><time>${date}</time></li>`;
+  h += `</ol>`;
+  if (p.todo) h += `<p class="todo"><span class="zh">${p.todo.zh}</span><span class="en">${p.todo.en}</span></p>`;
+  h += `</section>`;
+}
+h += `<section class="part"><h2><span class="zh">烟霞里的罗马</span><span class="en">Rome at Yanxia</span></h2><p class="range"><span class="zh">讲过罗马和它前后的几期分享</span><span class="en">Talks on Rome and what came before and after</span></p><ol class="arts yx">`;
+for (const [n, zh, en, y] of YANXIA)
+  h += `<li><span class="no">#${n}</span><a href="/#${n}"><span>${esc(zh)}</span><span class="en-t">${esc(en)}</span></a><time>${y}</time></li>`;
+h += `</ol></section>`;
+document.getElementById("parts").innerHTML = h;
+
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() {
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  btn.textContent = lang === "zh" ? "EN" : "中文";
+}
+btn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; try { localStorage.setItem(KEY, lang); } catch (e) {} apply(); });
+apply();
+</script>
+</body>
+</html>
